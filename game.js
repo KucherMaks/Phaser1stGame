@@ -13,6 +13,7 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
+    // додаємо небо
     this.load.image('sky', 'assets/sky.png');
     this.load.image('ground', 'assets/platform.png');
     this.load.image('star', 'assets/star.png');
@@ -25,6 +26,8 @@ function preload ()
 
 function create ()
 {
+    // додаємо небо х2
+    this.add.image(400, 300, 'sky');
 }
 
 function update ()
